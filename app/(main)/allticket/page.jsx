@@ -4,7 +4,7 @@ import AllTickets from "@/components/allticket/AllTicket";
 const page = () => {
   return (
     <div>
-      <AllTickets />
+      {/* <AllTickets /> */}
     </div>
   );
 };

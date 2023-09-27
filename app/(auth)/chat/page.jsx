@@ -26,7 +26,7 @@ const page = () => {
           </div>
         </div>
       </div> */}
-          <ChatHome/>
+          {/* <ChatHome/> */}
     </>
   );
 };

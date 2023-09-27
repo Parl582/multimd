@@ -28,20 +28,20 @@ const page = ({ searchParams }) => {
             ))}
           </select>
           <div className="flex gap-4 items-center md:mt-4 mt-2">
-            <Link
+            {/* <Link
               href={`/help/${user?.id}`}
               className="bg-white ring-1 px-3 py-1 rounded-[10px]"
             >
               {" "}
               Create New Ticket
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href={"/allticket"}
               className="bg-white ring-1 px-3 py-1 rounded-[10px]"
             >
               {" "}
               View Your Tickets{" "}
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="w-full  flex flex-wrap justify-between mt-4">
@@ -56,12 +56,12 @@ const page = ({ searchParams }) => {
             <VoiceChat stokeWidth={0.5} className="cursor-pointer" />
           </div>
           <div className="md:w-[40%] w-full  p-2 h-full bg-slate-50 rounded-sm ">
+            {/* <Accordians />
             <Accordians />
             <Accordians />
             <Accordians />
             <Accordians />
-            <Accordians />
-            <Accordians />
+            <Accordians /> */}
           </div>
         </div>
 
