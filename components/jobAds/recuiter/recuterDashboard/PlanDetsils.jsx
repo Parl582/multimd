@@ -34,7 +34,7 @@ const PlanDetsils = ({ plan }) => {
             </>
           ) : (
             <div className="w-full flex items-center justify-center ">
-              You Don't Have any Active Plan please{" "}
+              You Dont Have any Active Plan please{" "}
               <span
                 className="underline px-2 text-[#158e] cursor-pointer"
                 onClick={() => navigate("/properties-plan")}

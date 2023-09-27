@@ -9,9 +9,9 @@ import { VscEyeClosed } from "react-icons/vsc";
 import ForgotPassword from "@/components/common/ForgotPassword";
 import ResetPassword from "@/components/common/ResetPassword";
 
-const page = () => {
+const Login = () => {
   const searchparams = useSearchParams();
-  console.log(searchparams.get("page"));
+  console.log(searchparams.get("Login"));
   const [show, setShow] = useState(false);
 
   const [userInfo, setUserInfo] = useState();
@@ -20,10 +20,10 @@ const page = () => {
     console.log("i am user input ====>", e.target.value);
   };
 
-  if (searchparams.get("page") === "forgot-password") {
+  if (searchparams.get("Login") === "forgot-password") {
     return <ForgotPassword />;
   }
-  if (searchparams.get("page") === "reset-password") {
+  if (searchparams.get("Login") === "reset-password") {
     return <ResetPassword />;
   }
   return (
@@ -65,7 +65,7 @@ const page = () => {
             </div>
           </div>
           <Link
-            href={"?page=forgot-password"}
+            href={"?Login=forgot-password"}
             className="w-full flex justify-end py-2 text-sm font-light"
           >
             Forgot password ?
@@ -103,7 +103,7 @@ const page = () => {
           </Link>
         </div>
         <div className="text-sm text-slate-600">
-          By continuing, I agree to company's
+          By continuing, I agree to companys
           <Link href="/" className="text-blue-600 mx-1">
             Terms of Use & Privacy Policy
           </Link>
@@ -113,4 +113,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Login;
