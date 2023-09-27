@@ -1,0 +1,27 @@
+
+.chatInput{
+    /* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+    
+
+}
+
+
+.centerSelect{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-date-time{
+  font-family: 'Farsan', cursive;
+}
