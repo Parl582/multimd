@@ -13,7 +13,7 @@ import React, { useState } from "react";
 import { PiAddressBook, PiEyeClosedBold } from "react-icons/pi";
 import { VscEyeClosed } from "react-icons/vsc";
 
-const page = () => {
+const Register = () => {
   const [show, setShow] = useState(false);
   return (
     <div className="w-full ">
@@ -178,4 +178,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Register;

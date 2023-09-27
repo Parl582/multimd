@@ -30,8 +30,10 @@ const SelectChatOption = ({ setName, name, setClick, click }) => {
                 {/* filter the main API data(now Static data) with start with character */}
                 {data
                   .filter((item) => item.label.toLowerCase().startsWith(name))
-                  .map((elm) => (
+                  .map((elm,i) => (
                     <li
+                    key={i}
+
                       className="w-full p-3 cursor-pointer hover:bg-[#e2e2e2] list-none"
                       onClick={() => setName(elm.label)}
                     >

@@ -5,20 +5,20 @@ const JobAdsPrice = () => {
     <>
       <div className="w-full ">
         <div className="w-full flex flex-wrap">
-          {data.map((elm) => (
-            <div className="md:w-1/3 w-full  h-[500px] p-2 ">
+          {data.map((elm,i) => (
+            <div className="md:w-1/3 w-full  h-[500px] p-2 " key={i} >
               <div className="w-full hover:shadow-2xl shadow-sm rounded-sm border-[1.1px] duration-200 h-full p-3 flex flex-col justify-between">
                 <ul className="space-y-3 ">
                   {/* // header  */}
 
                   <div className="w-full pb-4">
                     <h2 className="text-[2.1rem] font-light ">
-                       
-                      {elm.mainName} 
+
+                      {elm.mainName}
                     </h2>
                     <p className="text-[1.2rem] font-semibold">
-                       
-                      INR {elm.price} 
+
+                      INR {elm.price}
                     </p>
                   </div>
                   {elm.planIncludes.map((elm) => (
@@ -30,7 +30,7 @@ const JobAdsPrice = () => {
                         arrow_circle_right
                       </span>
                       <span className="text-[0.9rem] leading-6">
-                         
+
                         {elm.title}
                       </span>
                     </li>
@@ -39,11 +39,11 @@ const JobAdsPrice = () => {
 
                 <button
                   className="uppercase text-[1.1rem] bg-[#158aed] border-[1.2px] text-[white] w-full py-2 hover:bg-[#fff] hover:border-[black] hover:text-black duration-200
-                
+
                 rounded-[50px]
                 "
                 >
-                   
+
                   Buy Plan Now
                 </button>
               </div>

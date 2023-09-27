@@ -23,8 +23,8 @@ const page = ({ searchParams }) => {
             Please Select Problem
           </p>
           <select name="" id="" className="w-[30%] py-2 border-2 rounded-[4px]">
-            {data.map((elm) => (
-              <option value={elm.name}> {elm.name} </option>
+            {data.map((elm,) => (
+              <option value={elm.name}  key={i}> {elm.name} </option>
             ))}
           </select>
           <div className="flex gap-4 items-center md:mt-4 mt-2">

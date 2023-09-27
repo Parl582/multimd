@@ -10,8 +10,9 @@ const InterviewCandiadte = () => {
         <p className="text-[1rem] font-semibold "> Select Interview Mode </p>
 
         <div className="flex gap-2 py-2">
-          {data.map((elm) => (
+          {data.map((elm,i) => (
             <span
+            key={i}
               className={`py-1 px-3 rounded-[50px] border-[1.2px] cursor-pointer border-[#262626] hover:bg-[#158aed] hover:text-[white] ${
                 elm.title === mode ? "bg-[#158aed] text-[white]" : "bg-white"
               }  duration-150`}

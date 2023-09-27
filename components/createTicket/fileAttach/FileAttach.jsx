@@ -4,7 +4,7 @@ const FileAttach = ({ addImage, setUpdateImage, AddMoreImages, Remove }) => {
   return (
     <>
       {addImage?.map((elm, index) => (
-        <>
+        <React.Fragment key={index}>
           <div className="md:w-[80%] w-full  p-1 ">
             <div className="text-sm md:text-[1.2rem] font-bold">
               Attach a File
@@ -25,7 +25,7 @@ const FileAttach = ({ addImage, setUpdateImage, AddMoreImages, Remove }) => {
                   </div>
                 </div>
                 {/* <span className="text-[#4c4c4c] text-[0.8rem]">
-                          Only JPG, JPEG, PNG file accepted   
+                          Only JPG, JPEG, PNG file accepted
                         </span> */}
               </div>
               <div className="w-[20%]   h-full flex justify-end">
@@ -56,7 +56,7 @@ const FileAttach = ({ addImage, setUpdateImage, AddMoreImages, Remove }) => {
               </div>
             </div>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </>
   );

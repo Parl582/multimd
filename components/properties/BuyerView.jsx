@@ -72,8 +72,8 @@ const BuyerView = () => {
               more ? "h-auto opacity-100 visible" : "h-0 opacity-0 invisible"
             } duration-200 `}
           >
-            {data?.map((elm) => (
-              <div className="w-1/5 p-1">
+            {data?.map((elm,i) => (
+              <div className="w-1/5 p-1" key={i}>
                 <label className="text-[0.8rem] text-black font-bold px-[2px]">
                   Select land Size
                 </label>
@@ -92,7 +92,7 @@ const BuyerView = () => {
 
           <div className="w-full flex flex-wrap">
             {data.map((elm) => (
-              <div className="md:w-1/2 w-full p-1">
+              <div className="md:w-1/2 w-full p-1" key={elm.id}>
                 <SingleProperties id={elm.id} />
               </div>
             ))}

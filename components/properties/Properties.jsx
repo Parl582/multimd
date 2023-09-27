@@ -126,12 +126,13 @@ const LandHome = () => {
           </div>
 
           <div className="w-full flex gap-2 py-4">
-            {btn.map((elm) => (
+            {btn.map((elm,i) => (
               <span
                 className={`text-[1rem] px-3 py-[2px] cursor-pointer  border-green-400 border-[1.1px] rounded-[30px] w-[110px] text-center text-green-500 ${
                   elm.title === buttonSelect ? "bg-green-300" : "bg-green-50"
                 } `}
                 onClick={() => setBtn(elm.title)}
+                key={i}
               >
                 {elm.title}
               </span>
