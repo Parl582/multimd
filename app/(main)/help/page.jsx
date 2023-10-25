@@ -23,8 +23,11 @@ const page = ({ searchParams }) => {
             Please Select Problem
           </p>
           <select name="" id="" className="w-[30%] py-2 border-2 rounded-[4px]">
-            {data.map((elm,) => (
-              <option value={elm.name}  key={i}> {elm.name} </option>
+            {data.map((elm, i) => (
+              <option value={elm.name} key={i}>
+                {" "}
+                {elm.name}{" "}
+              </option>
             ))}
           </select>
           <div className="flex gap-4 items-center md:mt-4 mt-2">
@@ -44,7 +47,7 @@ const page = ({ searchParams }) => {
             </Link> */}
           </div>
         </div>
-        <div className="w-full  flex flex-wrap justify-between mt-4">
+        <div className="w-full  flex flex-wrap justify-between ">
           <div className="md:w-[60%] w-full  border-r md:pr-4  ">
             {/* //sent voice note  */}
             <div className="w-full flex justify-end py-2 px-1">
@@ -56,12 +59,12 @@ const page = ({ searchParams }) => {
             <VoiceChat stokeWidth={0.5} className="cursor-pointer" />
           </div>
           <div className="md:w-[40%] w-full  p-2 h-full bg-slate-50 rounded-sm ">
-            {/* <Accordians />
             <Accordians />
             <Accordians />
             <Accordians />
             <Accordians />
-            <Accordians /> */}
+            <Accordians />
+            <Accordians />
           </div>
         </div>
 

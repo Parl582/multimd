@@ -96,6 +96,8 @@ const Landing = async () => {
 
       <TwoWithFour />
       <FourSlider Images={data} />
+
+      <SingleSlider Images={data} />
       {/* <CommonSlider
         Images={data}
         smDeviceCount="1"

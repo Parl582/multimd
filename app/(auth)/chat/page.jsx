@@ -1,7 +1,7 @@
 import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import ChatHome from "@/components/chat/chatUI/ChatHome"
+import ChatHome from "@/components/chat/chatUI/ChatHome";
 
 const page = () => {
   return (
@@ -26,7 +26,7 @@ const page = () => {
           </div>
         </div>
       </div> */}
-          {/* <ChatHome/> */}
+      <ChatHome />
     </>
   );
 };

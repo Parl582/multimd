@@ -63,7 +63,7 @@ const SingleSlider = ({ Images }) => {
                   "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/da2adeafd09cccc8.jpg?q=20"
                 }
                 alt=""
-                className="w-full  md:object-contain object-cover md:min-h-[280px] md:max-h-[280px] h-[185px]  h-full aspect-auto  "
+                className="w-full object-cover md:min-h-[280px] md:max-h-[280px] h-[190px]  h-full aspect-auto  "
               />
 
               {/* <AdsLowerContent elm={elm.body} /> */}

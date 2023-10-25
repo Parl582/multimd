@@ -1,4 +1,3 @@
-
 {
   "name": "nextjs-main-web-new",
   "version": "0.1.0",
@@ -31,6 +30,7 @@
     "jodit-react": "^1.3.39",
     "lucide-react": "^0.279.0",
     "next": "13.5.2",
+    "nextjs-toploader": "^1.5.3",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
