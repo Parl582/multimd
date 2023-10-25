@@ -35,6 +35,10 @@ const MobileHumbugger = () => {
 
           <MobileAccordion name={"Properties"} path={"properties"} data={[]} />
           <MobileAccordion name={"About"} path={"properties"} data={[]} />
+          <MobileAccordion name={"MS"} path={"properties"} data={[]} />
+          <MobileAccordion name={"SM"} path={"properties"} data={[]} />
+          <MobileAccordion name={"Job"} path={"properties"} data={[]} />
+          <MobileAccordion name={"Country"} path={"properties"} data={[]} />
         </SheetHeader>
       </SheetContent>
     </Sheet>
