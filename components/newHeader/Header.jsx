@@ -35,8 +35,8 @@ const Header = () => {
           height={30}
           className="px-3"
         /> */}
-        <h2> Logo </h2>
-        <div className="flex-1 border lg:flex hidden items-center md:gap-2 gap-1 px-3 rounded-2xl overflow-hidden bg-slate-100 ">
+        <Link href={'/'}> Logo </Link>
+        <div className="flex-1 border lg:flex hidden items-center md:gap-2 gap-1 px-3 rounded-[4px] overflow-hidden bg-slate-100 ">
           <span className="border-r-2 px-2 border-s-teal-500 cursor-pointer bg-transparent">
             All
           </span>
@@ -45,7 +45,7 @@ const Header = () => {
             className="w-full px-2 py-2 bg-transparent outline-none "
             placeholder="Search Something"
           />
-          <Search strokeWidth={0.75} className="bg-transparent" />
+          <Search strokeWidth={0.75} className="bg-transparent cursor-pointer" />
         </div>
         <div className="flex items-center h-full py-1 md:py-3   md:gap-3 gap-2">
           <Link

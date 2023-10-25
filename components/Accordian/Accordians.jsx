@@ -5,16 +5,19 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const Accordians = () => {
+const Accordians = ({ title }) => {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger className="hover:underline-0">
-          Is it accessible?
+        <AccordionTrigger className="hover:underline-0 md:text-base text-sm">
+          {title}
         </AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur consequuntur explicabo quas minus iste, dolor beatae facilis aspernatur, voluptatibus quibusdam repudiandae quos dolorem illo tempora error nobis nostrum eius?
+          Yes. It adheres to the WAI-ARIA design pattern. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Ullam pariatur consequuntur
+          explicabo quas minus iste, dolor beatae facilis aspernatur,
+          voluptatibus quibusdam repudiandae quos dolorem illo tempora error
+          nobis nostrum eius?
         </AccordionContent>
       </AccordionItem>
     </Accordion>

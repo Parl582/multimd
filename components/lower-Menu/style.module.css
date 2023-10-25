@@ -1,0 +1,3 @@
+.lower-nav {
+    @apply w-full absolute top-full z-40 bg-white group-hover/item:h-auto group-hover/item:visible opacity-0 group-hover/item:opacity-100 invisible duration-300 transition-all
+}

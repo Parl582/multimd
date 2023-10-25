@@ -8,6 +8,8 @@ import MainHeader from "../MainHeader";
 import AdsUpperContent from "../AdsUpplerContent";
 import AdsLowerContent from "../AdsLowerContent";
 import Link from "next/link";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 
 const SingleSlider = ({ Images }) => {
   var settings = {
@@ -50,21 +52,30 @@ const SingleSlider = ({ Images }) => {
     <div className="w-full  border-[1px] flex flex-col  overflow-hidden bg-[#E3E6E6]/70 px-3 py-1 ">
       {/* <MainHeader /> */}
       <Slider {...settings}>
-        {Images?.slice(0, 10).map((elm) => (
+        {Images?.slice(0, 2).map((elm) => (
           <Link
             href={`${elm.pathname}/${elm.id}?page=${elm.pathname}`}
             className="w-full  overflow-hidden "
             key={elm.id}
           >
-            <div className=" bg-white border-[1px] hover:shadow-lg  cursor-pointer transition-all duration-100 ">
+            <div className=" bg-white border-[4px] hover:shadow-lg md:h-max h-[200px]  object-contain cursor-pointer transition-all duration-100 w-full relative">
               {/* <AdsUpperContent elm={elm.title} /> */}
+              {/* <AspectRatio > */}
               <img
                 src={
                   "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/da2adeafd09cccc8.jpg?q=20"
                 }
-                alt=""
-                className="w-full object-cover md:min-h-[280px] md:max-h-[280px] h-[190px]  h-full aspect-auto  "
+                alt="Image"
+                className="h-full w-full md:object-contain object-cover"
               />
+              {/* <img
+                  src={
+                    "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/da2adeafd09cccc8.jpg?q=20"
+                  }
+                  alt=""
+                  className="w-full object-cover md:min-h-[280px] md:max-h-[280px] h-[190px]  h-full aspect-auto  "
+                /> */}
+              {/* </AspectRatio> */}
 
               {/* <AdsLowerContent elm={elm.body} /> */}
             </div>

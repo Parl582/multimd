@@ -11,11 +11,11 @@ const MobileHeader = () => {
   return (
     <div className="w-full top-0 sticky md:hidden block bg-white z-50">
       <div
-        className={`w-full flex justify-between px-2 items-center ${
+        className={`w-full flex justify-between px-2 pt-1.5 items-center ${
           toggle === "down" ? "hidden opacity-0" : "flex opacity-100"
         } duration-150  `}
       >
-        <Link href={"/"}> Logo </Link>
+        <Link href={"/"} className="text-xl font-bold"> Logo </Link>
 
         <div className="flex items-center gap-3 ">
           <Link
@@ -44,7 +44,7 @@ const MobileHeader = () => {
             <User2 strokeWidth={0.8} className="md:block hidden" />
             <span> Login </span>
                   </Link>
-                  
+
                   {/* open sheet  button  */}
           <MobileHumbugger />
         </div>

@@ -22,7 +22,11 @@ const page = ({ searchParams }) => {
             {" "}
             Please Select Problem
           </p>
-          <select name="" id="" className="w-[30%] py-2 border-2 rounded-[4px]">
+          <select
+            name=""
+            id=""
+            className="md:w-[30%] w-[70%] py-2 border-2 rounded-[4px]"
+          >
             {data.map((elm, i) => (
               <option value={elm.name} key={i}>
                 {" "}
@@ -59,12 +63,11 @@ const page = ({ searchParams }) => {
             <VoiceChat stokeWidth={0.5} className="cursor-pointer" />
           </div>
           <div className="md:w-[40%] w-full  p-2 h-full bg-slate-50 rounded-sm ">
-            <Accordians />
-            <Accordians />
-            <Accordians />
-            <Accordians />
-            <Accordians />
-            <Accordians />
+            <Accordians title="how to use chat section" />
+            <Accordians title="how to use help" />
+            <Accordians title="how to become a seller" />
+            <Accordians title="how to Login" />
+            <Accordians title="how to Register" />
           </div>
         </div>
 

@@ -7,8 +7,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Header />
-      {/* <LowerMenu /> */}
-      
+      <LowerMenu />
+
       {children}
       <Footer />
     </div>
