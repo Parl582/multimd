@@ -7,8 +7,8 @@ const LowerMenu = () => {
   return (
     <div className="w-full md:px-11 px-4 md:flex items-center h-[60px] hidden">
       <div className="relative cursor-pointer  w-full h-full gap-4 flex items-center justify-center">
-        {data.map((elm) => (
-          <div className="h-full w-max group/mega flex items-center">
+        {data.map((elm, i) => (
+          <div className="h-full w-max group/mega flex items-center" key={i}>
             <span className="w-max px-2 group-hover/mega:border-b-2 md:text-sm xl:text-base text-xs border-red-400 h-full flex m-auto items-center ">
               {elm.name}
             </span>
